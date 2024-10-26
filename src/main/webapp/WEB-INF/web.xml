@@ -1,0 +1,48 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<display-name>UploadServlet</display-name>
+		<servlet-class>Servletss.UploadServlet</servlet-class>
+		<multipart-config>
+			<location>/</location>Specify a temporary directory for storing uploaded 
+				files
+			<max-file-size>1048576</max-file-size> Max file size in bytes
+			<max-request-size>2097152</max-request-size> Max request size in bytes
+			<file-size-threshold>0</file-size-threshold>
+		</multipart-config>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadServletts</servlet-name>
+		<display-name>UploadServletts</display-name>
+		<description></description>
+		<servlet-class>Servletts.UploadServletts</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<display-name>LoginServlet</display-name>
+		<description></description>
+		<servlet-class>Servletts.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateStudentServlet</servlet-name>
+		<display-name>UpdateStudentServlet</display-name>
+		<description></description>
+		<servlet-class>Servletts.UpdateStudentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadServletts</servlet-name>
+		<url-pattern>/UploadServletts</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateStudentServlet</servlet-name>
+		<url-pattern>/UpdateStudentServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
